@@ -1,5 +1,6 @@
 <?php require_once HEADER; ?>
 
+
 <div class="container">
     <div class="row">
         <div class="col-md-6 d-flex align-items-center">
@@ -98,6 +99,8 @@ foreach ($resultados as $modal) {
     </div>
 <?php } ?>
 
+
+
 <?php $rol_valor = (isset($_SESSION['rol'])) ? $_SESSION['rol'] : ''; ?>
 
 <script type="text/javascript">
@@ -149,7 +152,7 @@ foreach ($resultados as $modal) {
     }
 </script>
 
-<?php require_once FOOTER; ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
