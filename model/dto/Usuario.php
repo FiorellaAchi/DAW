@@ -1,5 +1,5 @@
 <?php
-
+//LUIS BEDOYA JAIME
 class Usuario{
     private $id, $nombre, $apellido, $nombreUsuario,$password, $nombreRol;
 

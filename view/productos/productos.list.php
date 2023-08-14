@@ -52,9 +52,8 @@
                         if (isset($_SESSION['rol'])) {
                         ?>
                             <td class="text-center">
-                                <a class="btn btn-primary" href="index.php?c=producto&f=view_edit&id=<?php echo  $fila['id']; ?>">
-                                    <i class="fas fa-marker"></i>
-                                </a>
+                                <a class="me-1 btn btn-primary" href="index.php?c=producto&f=view_edit&id=<?php echo  $fila['id']; ?>">
+                                    <i class="fas fa-marker"></i></a>
                                 <a class="btn btn-danger" 
                                   onclick="if(!confirm('¿Está seguro de eliminar este producto?'))return false;" 
                                        href="index.php?c=producto&f=delete&id=<?php echo  $fila['id']; ?>">
@@ -80,7 +79,7 @@
 foreach ($resultados as $modal) {
 ?>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal<?php echo $modal['prod_id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal<?php echo $modal['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -92,7 +91,7 @@ foreach ($resultados as $modal) {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a class="btn btn-primary" href="index.php?c=producto&f=delete&id=<?php echo $modal['prod_id']; ?>">Eliminar</a>
+                    <a class="btn btn-primary" href="index.php?c=producto&f=delete&id=<?php echo $modal['id']; ?>">Eliminar</a>
                 </div>
             </div>
         </div>
@@ -131,18 +130,15 @@ foreach ($resultados as $modal) {
         resultados = '';
         for (var i = 0; i < productos.length; i++) {
             resultados += '<tr>';
-            resultados += '<td>' + productos[i].prod_id; + '</td>';
-            resultados += '<td>' + productos[i].prod_nombre + '</td>';
-            resultados += '<td>' + productos[i].prod_descripcion + '</td>';
-            resultados += '<td>' + productos[i].cat_nombre + '</td>';
-            resultados += '<td>' + productos[i].prod_estado + '</td>';
-            resultados += '<td>' + productos[i].prod_precio + '</td>';
+            resultados += '<td>' + productos[i].id; + '</td>';
+            resultados += '<td>' + productos[i].nombre + '</td>';
+            resultados += '<td>' + productos[i].precio + '</td>';
             if (rol != '') {
                 resultados += '<td>' +
-                    "<a class='me-1 btn btn-primary' href='index.php?c=producto&f=view_edit&id=" + productos[i].prod_id + "'>" +
+                    "<a class='me-1 btn btn-primary' href='index.php?c=producto&f=view_edit&id=" + productos[i].id + "'>" +
                     "<i class='fas fa-marker'></i>" +
                     "</a>" +
-                    "<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#exampleModal" + productos[i].prod_id + "'>" +
+                    "<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#exampleModal" + productos[i].id + "'>" +
                     "<i class='fas fa-trash-alt'></i>" +
                     "</button>" + '</td>';
             }
@@ -153,3 +149,14 @@ foreach ($resultados as $modal) {
     }
 </script>
 
+<?php require_once FOOTER; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <html meta="utf-8">
+        <head>
+            <title>Listar Productos</title>
+            <meta author="FIORELLA ACHI">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+</html>

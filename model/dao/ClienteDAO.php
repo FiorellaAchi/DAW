@@ -2,6 +2,7 @@
     require_once 'model/dto/Cliente.php';
     require_once 'config/Conexion.php';
 
+    //FIORELLA ACHI LIMONES
     class ClienteDAO
     {
         private $con;

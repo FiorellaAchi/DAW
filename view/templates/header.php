@@ -127,6 +127,7 @@ if (!isset($_SESSION)) {
                         ?>
                         <li class="nav-item menu">
                             <a class="nav-link" href="index.php?c=Cliente&f=index">Pacientes</a>
+
                         </li>
 
                     <?php

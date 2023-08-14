@@ -1,4 +1,5 @@
 <?php
+//LUIS BEDOYA
 class Consulta{
     private $idConsulta, $idPaciente, $idMedico, $nombrePaciente, $nombreMedico,$email, 
     $telefono, $especialidadMedica, $fechaConsulta, $horaConsulta, $consultaEstado;

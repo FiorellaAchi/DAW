@@ -1,4 +1,5 @@
 <?php 
+//FIORELLA ACHI
 class Cliente
 {
     private $idCliente, $nombre, $cedula, $edad, $genero, $correo, $direccion, $telefono;

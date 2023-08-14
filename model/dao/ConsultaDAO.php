@@ -1,7 +1,7 @@
 <?php
 require_once 'config/Conexion.php';
 require_once 'model/dto/Consulta.php';
-
+//LUIS BEDOYA JAIME
 class ConsultaDAO{
     private $con;
 

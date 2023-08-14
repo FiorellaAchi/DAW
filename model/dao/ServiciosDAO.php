@@ -1,5 +1,5 @@
 <?php
-// autor:FIORELLA ACHI
+// autor: JOSE BONIFAZ CHACON
 require_once 'config/Conexion.php';
 
 class ServiciosDAO

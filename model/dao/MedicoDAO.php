@@ -2,6 +2,7 @@
 require_once 'config/Conexion.php';
 require_once 'model/dto/Medico.php';
 
+//DOMENICA ORTIZ
 class MedicoDAO
 {
     private $con;

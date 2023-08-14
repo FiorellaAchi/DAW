@@ -48,3 +48,12 @@
         </div>
     </div>
 </div>
+<!DOCTYPE html>
+<html lang="en">
+    <html meta="utf-8">
+        <head>
+            <title>Crear Usuario</title>
+            <meta author="LUIS BEDOYA JAIME">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+</html>

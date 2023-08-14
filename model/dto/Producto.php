@@ -1,4 +1,5 @@
 <?php
+//FIORELLA ACHI
 class Producto {
     private $id, $nombre, $precio;
 

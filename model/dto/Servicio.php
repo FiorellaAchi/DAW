@@ -1,5 +1,5 @@
 <?php  
-
+//JOSE BONIFAZ CHACON
 class Servicio
 {
  private $idServicio, $nombreServicio, $descripcion, $medico_id, $paciente_id, $consultamedica_id;

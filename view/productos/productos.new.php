@@ -32,6 +32,20 @@ require_once HEADER;
     </div>
 </div>
 
+<?php
+    require_once FOOTER;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <html meta="utf-8">
+        <head>
+            <title>Listar Productos</title>
+            <meta author="FIORELLA ACHI">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+</html>
+
 
 
 
