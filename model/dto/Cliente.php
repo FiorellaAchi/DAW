@@ -2,7 +2,7 @@
 //FIORELLA ACHI
 class Cliente
 {
-    private $idCliente, $nombre, $cedula, $edad, $genero, $correo, $direccion, $telefono;
+    private $idCliente, $nombre, $cedula, $edad, $genero, $correo, $direccion, $telefono, $apellidos;
     function __construct()
     {
         
@@ -54,6 +54,14 @@ class Cliente
     }
     function setTelefono($telefono){
         $this->telefono = $telefono;
+    }
+
+    function getApellidos(){
+        return $this->apellidos;
+    }
+
+    function setApellidos($apellidos){
+        $this->apellidos = $apellidos;
     }
 }
 ?>

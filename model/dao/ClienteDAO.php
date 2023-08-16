@@ -38,8 +38,8 @@
         public function insert($cliente)
         {
             try {
-                $sql = "INSERT INTO pacientes (nombre, cedula, edad, genero, correo, direccion, telefono) 
-                VALUES (:nombre, :cedula, :edad, :genero, :correo, :direccion, :telefono)";
+                $sql = "INSERT INTO pacientes (nombre, cedula, edad, genero, correo, direccion, telefono, apellidos) 
+                VALUES (:nombre, :cedula, :edad, :genero, :correo, :direccion, :telefono, :apellidos)";
                 $query = $this->con->prepare($sql);
                 $data = [
                     'nombre' => $cliente->getNombre(),
@@ -48,7 +48,8 @@
                     'genero' => $cliente->getGenero(),
                     'correo' => $cliente->getCorreo(),
                     'direccion' => $cliente->getDireccion(),
-                    'telefono' => $cliente->getTelefono()
+                    'telefono' => $cliente->getTelefono(),
+                    'apellidos' => $cliente->getApellidos()
                 ];
                 $query->execute($data);
                 if ($query->rowCount() >= 0) {
@@ -65,7 +66,7 @@
         {
             try {
                 $sql = "UPDATE pacientes SET nombre=:nombre, cedula=:cedula, edad=:edad, genero=:genero, 
-                correo=:correo, direccion=:direccion, telefono=:telefono WHERE idPaciente=:idPaciente";
+                correo=:correo, direccion=:direccion, telefono=:telefono, apellidos=:apellidos WHERE idPaciente=:idPaciente";
                 $query = $this->con->prepare($sql);
                 $data = [
                     'idPaciente' => $cli->getIdCliente(),
@@ -75,7 +76,8 @@
                     'genero' => $cli->getGenero(),
                     'correo' => $cli->getCorreo(),
                     'direccion' => $cli->getDireccion(),
-                    'telefono' => $cli->getTelefono()
+                    'telefono' => $cli->getTelefono(),
+                    'apellidos' => $cli->getApellidos()
                 ];
                 $query->execute($data);
                 if ($query->rowCount() < 0) {

@@ -28,7 +28,7 @@ class ServiciosController
     require_once V_SERVICIO . 'list.php';
   }
 
-  public function searchAjax()
+  public function busquedaAjax()
   {
     $titulo = "Lista de servicios";
     $parametro = (!empty($_GET["b"])) ? htmlentities($_GET["b"]) : "";

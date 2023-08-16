@@ -40,6 +40,10 @@ require_once HEADER;
                         <label for="telefono" class="form-label">Telefono</label>
                         <input type="text" class="form-control" name="telefono" id="telefono">
                     </div>
+                    <div class="col-lg-6">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" name="apellidos" id="apellidos">
+                    </div>
 
                     <div class="text-center mt-5">
                         <button type="submit" class="btn btn-primary">Guardar</button>

@@ -38,6 +38,7 @@
         <th>Correo</th>
         <th>Direccion</th>
         <th>Telefono</th>
+        <th>Apellidos</th>
         <th>Acciones </th>
 </thead>
 <tbody class="datos-tabla text-center">
@@ -54,6 +55,7 @@
     <td><?php echo $fila['correo']; ?></td>
     <td><?php echo $fila['direccion']; ?></td>
     <td><?php echo $fila['telefono']; ?></td>
+    <td><?php echo $fila['apellidos']; ?></td>
     <td>
         <?php
         if (isset($_SESSION['rol'])) {

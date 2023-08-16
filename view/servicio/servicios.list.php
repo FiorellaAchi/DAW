@@ -7,7 +7,7 @@ require_once HEADER;
   <div class="row">
     <div class="col-md-6 d-flex align-items-center">
       <h4 class="me-2">Buscar: </h4>
-      <input type="text" name="busquedaAjax" id="busquedaAjax" placeholder="Buscar producto" class="px-2" />
+      <input type="text" name="busquedaAjax" id="busquedaAjax" class="px-2" />
 
     </div>
 
@@ -145,9 +145,6 @@ require_once HEADER;
   <?php } ?>
 </div>
 
-<?php
-require_once FOOTER;
-?>
 
 <!DOCTYPE html>
 <html lang="en">

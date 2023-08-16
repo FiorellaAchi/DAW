@@ -51,9 +51,6 @@ require_once HEADER;
         </div>
     </div>
 </div>
-<?php
-    require_once FOOTER;
-?>
 
 <!DOCTYPE html>
 <html lang="en">

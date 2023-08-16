@@ -83,9 +83,6 @@ require_once HEADER;
 
 </div>
 
-<?php
-    require_once FOOTER;
-?>
 
 <!DOCTYPE html>
 <html lang="en">

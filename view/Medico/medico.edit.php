@@ -49,9 +49,6 @@ require_once HEADER;
     </div>
 </div>
 
-<?php
-    require_once FOOTER;
-?>
 
 
 <!DOCTYPE html>

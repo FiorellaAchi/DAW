@@ -40,7 +40,8 @@ class ClienteController
 
             $cli = new Cliente();
 
-            if (!empty($_POST['nombre']) &&!empty($_POST['cedula']) && !empty($_POST['edad'])  && !empty($_POST['genero']) && !empty($_POST['correo']) && !empty($_POST['telefono']) && !empty($_POST['direccion'])) {
+            if (!empty($_POST['nombre']) &&!empty($_POST['cedula']) && !empty($_POST['edad'])  && !empty($_POST['genero']) && 
+            !empty($_POST['correo']) && !empty($_POST['telefono']) && !empty($_POST['direccion'] && !empty($_POST['apellidos']))) {
                 $cli = new Cliente();
                 $cli->setNombre($_POST['nombre']);
                 $cli->setCorreo($_POST['correo']);
@@ -49,6 +50,7 @@ class ClienteController
                 $cli->setCedula($_POST['cedula']);
                 $cli->setEdad($_POST['edad']);
                 $cli->setGenero($_POST['genero']);
+                $cli->setApellidos($_POST['apellidos']);
 
                 $valido= $this->model->insert($cli);
 
@@ -92,7 +94,8 @@ class ClienteController
 
             $cli = new Cliente();
 
-            if (!empty($_POST['idPaciente']) && !empty($_POST['nombre']) &&!empty($_POST['cedula']) && !empty($_POST['edad'])  && !empty($_POST['genero']) && !empty($_POST['correo']) && !empty($_POST['telefono']) && !empty($_POST['direccion'])) {
+            if (!empty($_POST['idPaciente']) && !empty($_POST['nombre']) &&!empty($_POST['cedula']) && !empty($_POST['edad'])  
+            && !empty($_POST['genero']) && !empty($_POST['correo']) && !empty($_POST['telefono']) && !empty($_POST['direccion'])&& !empty($_POST['apellidos'])) {
                 $cli = new Cliente();
                 $cli->setIdCliente($_POST['idPaciente']);
 
@@ -103,6 +106,7 @@ class ClienteController
                 $cli->setCedula($_POST['cedula']);
                 $cli->setEdad($_POST['edad']);
                 $cli->setGenero($_POST['genero']);
+                $cli->setApellidos($_POST['apellidos']);
                 
                 $valido= $this->model->update($cli);
 

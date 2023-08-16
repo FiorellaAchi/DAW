@@ -94,7 +94,7 @@ if (!isset($_SESSION)) {
                     ?>
                     
                         <li class="nav-item menu">
-                        <a class="nav-link" href="index.php?c=medico.list.php&f=index">Medicos</a>
+                        <a class="nav-link" href="index.php?c=medico&f=index">Medicos</a>
                      </li>
 
                      <li class="nav-item menu">
